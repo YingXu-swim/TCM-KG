@@ -20,7 +20,8 @@ Then arrange and combine every two entities in documents, and  label the relatio
 In this experiment, 3 features are set:    
 * Text features: text information, semantic information;    
 * Location feature: the location information of the entity;    
-* Entity features: named entity information of the entity.    
+* Entity features: named entity information of the entity.     
+  
 Finally, compare the result of BiLSTM model, BiLSTM-attention model and HAN model.     
 
 
