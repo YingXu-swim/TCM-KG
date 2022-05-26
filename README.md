@@ -18,8 +18,15 @@ Firstly, obtain all named entities in the document according to the results extr
 Then arrange and combine every two entities in documents, and  label the relationship between the two entities.    
 
 In this experiment, 3 features are set:    
-* Text features: text information, semantic information;    
-* Location feature: the location information of the entity;    
+* Text features: text information, semantic information. And the text is represented in the form of embeddings;    
+
+* Location feature: the location information of the entity.         
+
+    For example, in the following example, the sentence is consists of 11 words, and [NAME],[QUANTITIES], [MEDICINE] and [SYMPTOM] are named entities. As for [QUANTITIES] in this sentence, it is at the position of 0 relative to itself, and the words on the left get smaller as the distance from aimed [QUANTITIES] increases. Similarly, words to the right of [QUANTITIES] will increase with distance.       
+
+    The [NAME] consists of [QUANTITIES] [MEDICINE], can cure [SYMPTOM].     
+    -1 0 1 2 3 4 5 6 7 8 9       
+
 * Entity features: named entity information of the entity.     
   
 Finally, compare the result of BiLSTM model, BiLSTM-attention model and HAN model.     
