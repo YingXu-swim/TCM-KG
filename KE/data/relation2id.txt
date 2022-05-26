@@ -1,0 +1,5 @@
+Name_constellation_Name	0
+Name_instruction_Use	1
+Name_cure_Symptom	2
+Use_match_Symptom	3
+Name_contain_Drug	4
