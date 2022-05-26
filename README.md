@@ -18,7 +18,9 @@ Firstly, obtain all named entities in the document according to the results extr
 Then arrange and combine every two entities in documents, and  label the relationship between the two entities.    
 
 In this experiment, 3 features are set:    
-* Text features: text information, semantic information. And the text is represented in the form of embeddings;    
+* Text features: text information, semantic information.      
+    
+    And the text is represented in the form of embeddings;    
 
 * Location feature: the location information of the entity.         
 
@@ -27,7 +29,9 @@ In this experiment, 3 features are set:
     The [NAME] consists of [QUANTITIES] [MEDICINE], can cure [SYMPTOM].     
     -1 0 1 2 3 4 5 6 7 8 9       
 
-* Entity features: named entity information of the entity.     
+* Entity features: named entity information of the entity.      
+    
+    Only the value of named entity position is entitytype2id(), the value of other positions is 0.     
   
 Finally, compare the result of BiLSTM model, BiLSTM-attention model and HAN model.     
 
